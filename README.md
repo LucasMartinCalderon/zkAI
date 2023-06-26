@@ -28,8 +28,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 - [Node.js](https://nodejs.org/) >= 12.0.0
 - [Python](https://www.python.org/) >= 3.7.0
-- [Solidity](https://soliditylang.org/) >= 0.6.12
-- [Truffle](https://www.trufflesuite.com/truffle) >= 5.3.0
+- [Solidity](https://soliditylang.org/) >= 0.8.20
+- [Foudry](https://github.com/foundry-rs/foundry) >= XXX
+- [TensorFlow](https://www.tensorflow.org) >= XXX
 
 ### Installation
 
@@ -59,19 +60,35 @@ You are now ready to start experimenting with zkAI!
 
 The examples folder contains sample code to help you get started with implementing zkAI in your own projects. Here's a simple example of how to use zkAI:
 
+1. Require the package
+
+```javascript
 const zkAI = require('zkAI');
+```
 
-// Load your model
+3. Load your model
+
+```javascript
 const model = zkAI.loadModel('path/to/your/model');
+```
 
-// Load your data
+5. Load your data
+
+```javascript
 const data = zkAI.loadData('path/to/your/data');
+```
 
-// Compute off-chain
+4. Compute off-chain
+
+```javascript
 const result = model.compute(data);
+```
 
-// Verify on-chain
+5. Verify on-chain
+
+```javascript
 zkAI.verify(result);
+```
 
 Check the examples directory for more complex use cases.
 
